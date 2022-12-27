@@ -9,9 +9,7 @@ function App() {
         backgroundImage: `url(${Background})`
       }}
     >
-      <h1>
-        Teste
-      </h1>
+      <Routers />
     </div>
   );
 }
