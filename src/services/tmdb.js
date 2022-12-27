@@ -2,7 +2,7 @@ async function getDate(type, nextPagination) {
 
     /* Type: tv or movie */
 
-    let url = `https://api.themoviedb.org/3/${type}/popular/?api_key=1e049c007e395f150ceb08e474fbf7ca&language=pt-BR&page=${nextPagination}`;
+    let url = `https://api.themoviedb.org/3/${type}/popular?api_key=1e049c007e395f150ceb08e474fbf7ca&language=pt-BR&page=${nextPagination}`;
     let response = await fetch(url);
     let data = await response.json()
 
