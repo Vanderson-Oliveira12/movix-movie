@@ -6,6 +6,8 @@ export const NavContainer = styled.nav`
     padding: 1.4rem 0;
     background: rgba(18, 24, 41, 0.8);
     backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
 
     .nav{
         display: flex;
@@ -16,8 +18,6 @@ export const NavContainer = styled.nav`
         margin: 0 auto;
     }
 
-
-
     .menu-burguer{
         padding: .5rem;
         display: none;
@@ -25,7 +25,9 @@ export const NavContainer = styled.nav`
 
 
     @media (min-width: 320px) and (max-width: 480px){
-        height: 15%;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
         
         .nav-links{
             font-size: 1.4rem;
@@ -33,7 +35,9 @@ export const NavContainer = styled.nav`
     }
 
     @media (min-width: 481px) and (max-width: 767px){
-        height: 15%;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
 
         .nav-links{
             font-size: 1.4rem;
@@ -41,11 +45,15 @@ export const NavContainer = styled.nav`
     }
 
     @media (min-width: 768px) and (max-width: 1024px){
-        height: 15%;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
     }
 
     @media (min-width: 1025px) and (max-width: 1280px){
-        height: 15%;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
     }
 `
 

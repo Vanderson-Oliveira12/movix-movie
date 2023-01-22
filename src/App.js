@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="App" 
       style={{
-        backgroundImage: `url(${Background})`
+        backgroundImage: `url(${Background})`,
+        backgroundSize: "cover",
       }}
     >
       <Routers />

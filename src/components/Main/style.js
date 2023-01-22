@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export default styled.main`
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     
@@ -10,7 +12,6 @@ export default styled.main`
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 90%;
         max-width: 1440px;
         margin: 0 auto;
         gap: 2rem;
@@ -102,4 +103,13 @@ export default styled.main`
     }
 
     
+`
+
+export const ContainerLoader = styled.div`
+    height: 100%;
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 `
