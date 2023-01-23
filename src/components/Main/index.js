@@ -62,15 +62,17 @@ export default function Main({ type }) {
         <>
 
             {
-                teste === 1 ? (
-                    <DotLoader
-                        loading={isLoading}
-                        color="#5A4AF4"
-                        speedMultiplier={0.5}
-                        aria-label="Loading Spinner"
-                        data-testid="loader"
-                        size={100}
-                    />
+                isLoading ? (
+                    <ContainerLoader>
+                        <DotLoader
+                            loading={isLoading}
+                            color="#5A4AF4"
+                            speedMultiplier={0.5}
+                            aria-label="Loading Spinner"
+                            data-testid="loader"
+                            size={70}
+                        />
+                    </ContainerLoader>
                 )
                     : (
                         <MainStyled>
